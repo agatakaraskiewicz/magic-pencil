@@ -10,8 +10,7 @@ def factorial(x):
     elif x < 0:
         print "Number below 0. Try again." 
         x = int(raw_input("Number:"))
-        print factorial(x)
-        """I have no idea, why, if this elif happens, it returns factorial and then None... Shouldn't it break after it executes that part?"""
+        return factorial(x)
     else:
         return x * factorial(x - 1)
         
