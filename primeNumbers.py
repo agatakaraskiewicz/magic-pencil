@@ -6,7 +6,7 @@ for number in numbers:
     if number % 2 != 0 and number % 3 != 0 and number % 5 != 0 and number % 7 != 0 and number % 9 != 0 and number % 11 != 0 and number % 13 != 0 and number % 17 != 0 and number % 19 != 0:
         print number
         
-#alredy know, that it's wrong and not enough
+# alredy know, that it's wrong and not enough
 
 # new solution
 number = int(raw_input("Number:"))
