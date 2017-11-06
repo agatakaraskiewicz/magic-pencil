@@ -7,3 +7,14 @@ for number in numbers:
         print number
         
 #alredy know, that it's wrong and not enough
+
+# new solution
+number = int(raw_input("Number:"))
+
+def prime(x):
+    while num in range(2, x - 1):
+        if x % num != 0:
+            return True
+            x += 1
+        else:
+            baljakumbezy
