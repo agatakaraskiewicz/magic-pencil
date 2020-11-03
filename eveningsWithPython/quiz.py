@@ -42,4 +42,6 @@ if userAnswer3 == bestPlant or userAnswer3 == secondBestPlant or userAnswer3 == 
 else:
 	print('Nope. Correct answers are: ' + bestPlant + ' or ' + secondBestPlant + ' or ' + thirdBestPlant)
 
+
+# Present how many points they got
 print('Here are the points you got: ' + str(points))		
