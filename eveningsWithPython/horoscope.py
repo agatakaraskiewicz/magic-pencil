@@ -17,3 +17,9 @@ shoeSize = input('What is your shoe size?')
 # Add shoeSize to your subNum and present the lucky number to the User
 luckyNum = subNum + int(shoeSize)
 print('So your lucky number is ' + str(luckyNum) + '.')
+
+# Add some actual prophecies based on the  generated number
+if luckyNum > 40:
+	print('A lot of successful things in the nearest future are waiting for you!')
+else:
+	print('The climatic disaster is comming and you cannot save the World!')
