@@ -1,10 +1,10 @@
 
 # question 1
-noblePrize = 'Olga Tokarczuk'
-secondNoblePrize = 'Peter Handke'
-userAnswer = input('Who got the literature Noble prize in 2019?')
+nobelPrize = 'Olga Tokarczuk'
+secondNobelPrize = 'Peter Handke'
+userAnswer = input('Who got the literature Nobel prize in 2019?')
 
-if userAnswer in noblePrize or userAnswer in secondNoblePrize:
+if userAnswer in nobelPrize or userAnswer in secondNobelPrize:
 	print('Correct!')
 else:
-	print('Nope. It was ' + noblePrize + ' and ' + secondNoblePrize)
+	print('Nope. It was ' + nobelPrize + ' and ' + secondNobelPrize)
