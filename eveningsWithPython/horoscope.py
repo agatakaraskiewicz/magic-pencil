@@ -21,5 +21,7 @@ print('So your lucky number is ' + str(luckyNum) + '.')
 # Add some actual prophecies based on the  generated number
 if luckyNum > 40:
 	print('A lot of successful things in the nearest future are waiting for you!')
+elif luckyNum == 13:
+	print('You are the luckiest from all, but beware the yellow duckies.')
 else:
 	print('The climatic disaster is comming and you cannot save the World!')
