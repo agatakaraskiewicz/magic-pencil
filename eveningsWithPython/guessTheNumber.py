@@ -5,15 +5,17 @@ attempts = 1
 userGuess = int(input('Guess a number between 1 and 10'))
 
 if userGuess == luckyNumber:
-	print(f'Congrats! you guessed the number and it took only {attempts} attempt!')
+	print(f'Congrats! You guessed the number and it took only {attempts} attempt!')
 else:
-	while userGuess != luckyNumber:
-		print('not this time')
-		attempts += 1
+	while userGuess != luckyNumber and attempts < 3:
+		print('Not this time')
 		print(f'You tried {attempts} times')
-		print(luckyNumber)
 		userGuess = int(input('Guess a number between 1 and 10'))
+		attempts += 1
 
-print(f'Congrats! you guessed the number and it took only {attempts} attempts!')	
+if attempts == 3:
+	print('You failed. Try again.')
+else:
+	print(f'Congrats! You guessed the number and it took only {attempts} attempts!')	
 
 
