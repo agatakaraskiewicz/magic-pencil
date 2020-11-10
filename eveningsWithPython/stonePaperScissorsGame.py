@@ -13,6 +13,14 @@ userPoints = 0
 
 howManyWins = int(input('How many wins?'))
 
+def userWins(currentUserScore):
+	print(f'You won!')
+	return currentUserScore + 1
+
+def compWins(currentCompScore):
+	print(f'You loose!')
+	return currentCompScore + 1
+
 #1. Create some randomized number (1,3), which will be the comp attack
 
 #3. Compare the created values and decide, who won
@@ -24,31 +32,19 @@ while points < howManyWins and userPoints < howManyWins:
 		continue
 	elif userAttack == 1:
 		if attack == 2:
-			print(f'You won!')
-			userPoints += 1
-			continue
+			userPoints = userWins(userPoints)
 		else:
-			print(f'You loose!')
-			points += 1
-			continue
+			points = compWins(points)
 	elif userAttack == 2:
 		if attack == 3:
-			print(f'You won!')
-			userPoints += 1
-			continue
+			userPoints = userWins(userPoints)
 		else:
-			print(f'You loose!')
-			points += 1
-			continue
+			points = compWins(points)
 	elif userAttack == 3:
 		if attack == 1:
-			print(f'You won!')
-			userPoints += 1
-			continue
+			userPoints = userWins(userPoints)
 		else:
-			print(f'You loose!')
-			points += 1
-			continue
+			points = compWins(points)
 	else:
 		print('You were supposed to provide 1-3 number... Try again')
 
